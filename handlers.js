@@ -10,6 +10,7 @@ const units = [
     'year', 'month', 'week', 'day', 'hour', 'minute', 'second', 'millisecond', 'quarter',
     'y', 'M', 'w', 'd', 'h', 'm', 's', 'ms', 'Q',
 ];
+// const shift_re = /AS "shift_([0-9]+)_(years|months|weeks|days|hours|minutes|seconds)"/;
 const shift_re = new RegExp(`[Aa][Ss]\\s+"shift_([0-9]+)_(${units.join('|')})"`);
 const from = /(time\s*>=?\s*)([0-9]+)(ms)/;
 const to = /(time\s*<=?\s*)([0-9]+)(ms)/;
